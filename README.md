@@ -5,6 +5,12 @@
 Proyecto aprendizaje para ramo "Taller de Desarrollo Web y Móvil"
 Semana 09: Sumativa 3 - Propuesta y visualización al repositorio
 
+Mockups realizados en Figma
+```sh
+https://www.figma.com/design/iu5bHC0wMiIeq3xRAJxDPv/App-FoodService-Pizza?node-id=0-1&t=YL1JbBQOcMHTX32q-1
+```
+
+
 **TuttoGusto** es una aplicación móvil desarrollada para una pizzería, diseñada para ofrecer a los usuarios una experiencia de pedido de pizzas y otros productos de manera rápida y sencilla. La aplicación permite a los usuarios explorar el menú, agregar productos al carrito de compras, realizar pedidos y gestionar su perfil, direcciones y métodos de pago.
 
 ## Funcionalidades Principales
