@@ -1,0 +1,80 @@
+name: flutter_app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_svg: ^2.0.10+1
+
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/images/logo.png
+  - assets/images/background.png
+  - assets/vectors/mask_group_7_x2.svg
+  - assets/images/background.png
+  - assets/images/logo.png
+  - assets/vectors/mask_group_9_x2.svg
+  - assets/images/logo.png
+  - assets/images/background.png
+  - assets/vectors/mask_group_6_x2.svg
+  - assets/images/background.png
+  - assets/images/logo.png
+  - assets/vectors/mask_group_1_x2.svg
+  - assets/images/logo.png
+  - assets/images/background.png
+  - assets/vectors/mask_group_3_x2.svg
+  - assets/images/background.png
+  - assets/images/logo.png
+  - assets/vectors/mask_group_4_x2.svg
+  - assets/images/logo.png
+  - assets/images/background.png
+  - assets/vectors/mask_group_10_x2.svg
+  - assets/images/logo.png
+  - assets/images/background.png
+  - assets/vectors/mask_group_2_x2.svg
+  - assets/images/aperol_spritz.png
+  - assets/images/logo.png
+  - assets/images/margherita.png
+  - assets/images/background.png
+  - assets/vectors/aperol_spritz_1_x2.svg
+  - assets/vectors/margherita_1_x2.svg
+  - assets/vectors/mask_group_x2.svg
+  - assets/images/logo.png
+  - assets/images/background.png
+  - assets/vectors/mask_group_5_x2.svg
+  - assets/images/aperol_spritz.png
+  - assets/images/background.png
+  - assets/images/logo.png
+  - assets/images/prosciutto_erucola.png
+  - assets/images/vino_chianti.png
+  - assets/images/limoncello.png
+  - assets/images/arancini.png
+  - assets/images/provolone_al_forno.png
+  - assets/images/tagliatelle_al_rag_bolognese.png
+  - assets/images/spaghetti_alla_carbonara.png
+  - assets/images/espresso.png
+  - assets/images/caprese.png
+  - assets/images/lasagna_alla_bolognese.png
+  - assets/images/bruschetta.png
+  - assets/images/quattro_formaggi.png
+  - assets/images/penne_al_pesto_genovese.png
+  - assets/images/diavola.png
+  - assets/images/margherita.png
+  - assets/vectors/mask_group_8_x2.svg
+  - assets/images/logo.png
+  - assets/images/background.png
+
