@@ -1,16 +1,35 @@
-# flutter_app
+# TuttoGusto - Aplicación Móvil
 
-A new Flutter project.
+## Descripción
 
-## Getting Started
+Proyecto aprendizaje para ramo "Taller de Desarrollo Web y Móvil"
+Semana 09: Sumativa 3 - Propuesta y visualización al repositorio
 
-This project is a starting point for a Flutter application.
+**TuttoGusto** es una aplicación móvil desarrollada para una pizzería, diseñada para ofrecer a los usuarios una experiencia de pedido de pizzas y otros productos de manera rápida y sencilla. La aplicación permite a los usuarios explorar el menú, agregar productos al carrito de compras, realizar pedidos y gestionar su perfil, direcciones y métodos de pago.
 
-A few resources to get you started if this is your first Flutter project:
+## Funcionalidades Principales
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Inicio de Sesión y Registro:** Los usuarios pueden registrarse y acceder a su cuenta para gestionar sus pedidos y preferencias.
+- **Exploración del Menú:** Visualiza diferentes categorías de productos como pizzas, pastas y antipastos, con precios y descripciones.
+- **Carrito de Compras:** Agrega productos al carrito, revisa los artículos y realiza el pago.
+- **Gestión de Pedidos:** Revisa el historial de pedidos anteriores con detalles y opciones para ver el recibo.
+- **Perfil y Configuraciones:** Administra la cuenta, direcciones de envío y métodos de pago desde la sección de perfil.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tecnologías Esperadas para uso
+
+- **Frontend:** Desarrollo utilizando framework de desarrollo móvil (Flutter).
+- **Backend:** Implementación de servicios backend con Node.js.
+- **Base de Datos:** Almacenamiento de datos utilizando una base de datos MongoDB.
+- **Autenticación:** Implementación de autenticación de usuario con tecnología de autenticación OAuth.
+- **Pasarela de Pago:** Integración con WebPay Transbank para pagos.
+
+## Requisitos Previos
+
+- Acceso a plataforma figma para edicion de mockups
+- Ambiente local para desarrollo de apligaciones moviles Flutter
+
+## Licencia
+Este proyecto está bajo la Licencia MIT.
+
+## Contacto
+Para cualquier duda o sugerencia, por favor contacta a f.herreralagos@uandresbello.edu
