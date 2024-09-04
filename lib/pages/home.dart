@@ -5,21 +5,23 @@ import 'package:flutter_app/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatelessWidget {
+  const Home({super.key});
+
   @override
   Widget build(BuildContext context) {
     return 
     Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Color(0xF2FFFFFF),
       ),
       child: Container(
-        padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
+        padding: const EdgeInsets.fromLTRB(0, 0, 0, 1),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              margin: EdgeInsets.fromLTRB(0, 0, 0, 7),
+              margin: const EdgeInsets.fromLTRB(0, 0, 0, 7),
               child: Stack(
                 children: [
                   Positioned(
@@ -38,13 +40,13 @@ class Home extends StatelessWidget {
             SizedBox(
                     width: 870,
                     child: Container(
-                      padding: EdgeInsets.fromLTRB(0, 726, 0, 34),
+                      padding: const EdgeInsets.fromLTRB(0, 726, 0, 34),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 0, 26),
+                            margin: const EdgeInsets.fromLTRB(0, 0, 0, 26),
                             child: SizedBox(
                               width: 343.6,
                               child: Row(
@@ -52,7 +54,7 @@ class Home extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
-                                    margin: EdgeInsets.fromLTRB(0, 28, 19, 31),
+                                    margin: const EdgeInsets.fromLTRB(0, 28, 19, 31),
                                     child: SizedBox(
                                       width: 28,
                                       child: Text(
@@ -61,7 +63,7 @@ class Home extends StatelessWidget {
                                           'Roboto Condensed',
                                           fontWeight: FontWeight.w900,
                                           fontSize: 32,
-                                          color: Color(0xFFE5E5E5),
+                                          color: const Color(0xFFE5E5E5),
                                         ),
                                       ),
                                     ),
@@ -71,9 +73,9 @@ class Home extends StatelessWidget {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        margin: EdgeInsets.fromLTRB(0, 0, 95.7, 0),
+                                        margin: const EdgeInsets.fromLTRB(0, 0, 95.7, 0),
                                         child: Container(
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             image: DecorationImage(
                                               fit: BoxFit.cover,
                                               image: AssetImage(
@@ -81,21 +83,21 @@ class Home extends StatelessWidget {
                                               ),
                                             ),
                                           ),
-                                          child: Container(
+                                          child: SizedBox(
                                             width: 107,
                                             height: 97,
                                           ),
                                         ),
                                       ),
                                       Container(
-                                        margin: EdgeInsets.fromLTRB(0, 32, 0, 27),
+                                        margin: const EdgeInsets.fromLTRB(0, 32, 0, 27),
                                         child: Text(
                                           '',
                                           style: GoogleFonts.getFont(
                                             'Roboto Condensed',
                                             fontWeight: FontWeight.w900,
                                             fontSize: 32,
-                                            color: Color(0xFFE5E5E5),
+                                            color: const Color(0xFFE5E5E5),
                                           ),
                                         ),
                                       ),
@@ -106,14 +108,14 @@ class Home extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(7, 0, 0, 0),
+                            margin: const EdgeInsets.fromLTRB(7, 0, 0, 0),
                             child: Text(
                               'Que es lo quieres pedir?',
                               style: GoogleFonts.getFont(
                                 'Nunito',
                                 fontWeight: FontWeight.w700,
                                 fontSize: 24,
-                                color: Color(0xFF1E1E1E),
+                                color: const Color(0xFF1E1E1E),
                               ),
                             ),
                           ),
@@ -125,31 +127,31 @@ class Home extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(37, 0, 37, 13),
+              margin: const EdgeInsets.fromLTRB(37, 0, 37, 13),
               child: Align(
                 alignment: Alignment.topRight,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Color(0xFFE5E5E5),
+                    color: const Color(0xFFE5E5E5),
                     borderRadius: BorderRadius.circular(40),
                   ),
                   child: SizedBox(
                     width: 300,
                     child: Container(
-                      padding: EdgeInsets.fromLTRB(24, 17, 0, 18),
+                      padding: const EdgeInsets.fromLTRB(24, 17, 0, 18),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 4, 21.5, 0),
+                            margin: const EdgeInsets.fromLTRB(0, 4, 21.5, 0),
                             child: Text(
                               '',
                               style: GoogleFonts.getFont(
                                 'Roboto Condensed',
                                 fontWeight: FontWeight.w900,
                                 fontSize: 18,
-                                color: Color(0xFFB0B0B0),
+                                color: const Color(0xFFB0B0B0),
                               ),
                             ),
                           ),
@@ -159,7 +161,7 @@ class Home extends StatelessWidget {
                               'Nunito',
                               fontWeight: FontWeight.w700,
                               fontSize: 18,
-                              color: Color(0xFFB0B0B0),
+                              color: const Color(0xFFB0B0B0),
                             ),
                           ),
                         ],
@@ -170,10 +172,10 @@ class Home extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(30, 0, 30, 29),
+              margin: const EdgeInsets.fromLTRB(30, 0, 30, 29),
               child: Align(
                 alignment: Alignment.topLeft,
-                child: Container(
+                child: SizedBox(
                   width: 330,
                   child: SizedBox(
                     width: 330,
@@ -190,22 +192,22 @@ class Home extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Container(
-                                    margin: EdgeInsets.fromLTRB(0.4, 0, 0.4, 0),
+                                    margin: const EdgeInsets.fromLTRB(0.4, 0, 0.4, 0),
                                     child: Text(
                                       'Pizzas',
                                       style: GoogleFonts.getFont(
                                         'Nunito',
                                         fontWeight: FontWeight.w700,
                                         fontSize: 24,
-                                        color: Color(0xFFFF4B3A),
+                                        color: const Color(0xFFFF4B3A),
                                       ),
                                     ),
                                   ),
                                   Container(
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(8),
-                                      color: Color(0xFFFF4B3A),
-                                      boxShadow: [
+                                      color: const Color(0xFFFF4B3A),
+                                      boxShadow: const [
                                         BoxShadow(
                                           color: Color(0x1AFF4B3A),
                                           offset: Offset(0, 5),
@@ -213,7 +215,7 @@ class Home extends StatelessWidget {
                                         ),
                                       ],
                                     ),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 70,
                                       height: 3,
                                     ),
@@ -221,14 +223,14 @@ class Home extends StatelessWidget {
                                 ],
                               ),
                               Container(
-                                margin: EdgeInsets.fromLTRB(0, 1.5, 0, 1.5),
+                                margin: const EdgeInsets.fromLTRB(0, 1.5, 0, 1.5),
                                 child: Text(
                                   'Pastas',
                                   style: GoogleFonts.getFont(
                                     'Nunito',
                                     fontWeight: FontWeight.w700,
                                     fontSize: 24,
-                                    color: Color(0xFFB0B0B0),
+                                    color: const Color(0xFFB0B0B0),
                                   ),
                                 ),
                               ),
@@ -238,7 +240,7 @@ class Home extends StatelessWidget {
                         Positioned(
                           right: -159.9,
                           bottom: 1.5,
-                          child: Container(
+                          child: SizedBox(
                             height: 33,
                             child: Text(
                               'Antipasto',
@@ -246,7 +248,7 @@ class Home extends StatelessWidget {
                                 'Nunito',
                                 fontWeight: FontWeight.w700,
                                 fontSize: 24,
-                                color: Color(0xFFB0B0B0),
+                                color: const Color(0xFFB0B0B0),
                               ),
                             ),
                           ),
@@ -254,7 +256,7 @@ class Home extends StatelessWidget {
                         Positioned(
                           right: -307.2,
                           bottom: 1.5,
-                          child: Container(
+                          child: SizedBox(
                             height: 33,
                             child: Text(
                               'Bebidas',
@@ -262,7 +264,7 @@ class Home extends StatelessWidget {
                                 'Nunito',
                                 fontWeight: FontWeight.w700,
                                 fontSize: 24,
-                                color: Color(0xFFB0B0B0),
+                                color: const Color(0xFFB0B0B0),
                               ),
                             ),
                           ),
@@ -274,7 +276,7 @@ class Home extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(10, 0, 10, 39),
+              margin: const EdgeInsets.fromLTRB(10, 0, 10, 39),
               child: Align(
                 alignment: Alignment.topLeft,
                 child: Stack(
@@ -284,7 +286,7 @@ class Home extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          margin: EdgeInsets.fromLTRB(15, 0, 15, 18),
+                          margin: const EdgeInsets.fromLTRB(15, 0, 15, 18),
                           child: Align(
                             alignment: Alignment.topLeft,
                             child: Text(
@@ -293,13 +295,13 @@ class Home extends StatelessWidget {
                                 'Nunito',
                                 fontWeight: FontWeight.w700,
                                 fontSize: 24,
-                                color: Color(0xFFFF4B3A),
+                                color: const Color(0xFFFF4B3A),
                               ),
                             ),
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.fromLTRB(0, 0, 0, 18),
+                          margin: const EdgeInsets.fromLTRB(0, 0, 0, 18),
                           child: SizedBox(
                             width: 370,
                             child: Stack(
@@ -307,15 +309,15 @@ class Home extends StatelessWidget {
                                 SizedBox(
                                   width: 179,
                                   child: Container(
-                                    padding: EdgeInsets.fromLTRB(0, 29, 0, 0),
+                                    padding: const EdgeInsets.fromLTRB(0, 29, 0, 0),
                                     child: Stack(
                                       clipBehavior: Clip.none,
                                       children: [
                                         Container(
                                           decoration: BoxDecoration(
                                             borderRadius: BorderRadius.circular(40),
-                                            color: Color(0xFFFFFFFF),
-                                            boxShadow: [
+                                            color: const Color(0xFFFFFFFF),
+                                            boxShadow: const [
                                               BoxShadow(
                                                 color: Color(0x1A000000),
                                                 offset: Offset(0, 10),
@@ -326,13 +328,13 @@ class Home extends StatelessWidget {
                                           child: SizedBox(
                                             width: 179,
                                             child: Container(
-                                              padding: EdgeInsets.fromLTRB(0, 142, 0, 28),
+                                              padding: const EdgeInsets.fromLTRB(0, 142, 0, 28),
                                               child: Column(
                                                 mainAxisAlignment: MainAxisAlignment.start,
                                                 crossAxisAlignment: CrossAxisAlignment.center,
                                                 children: [
                                                   Container(
-                                                    margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
+                                                    margin: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                                                     child: Text(
                                                       'Pizza
                                                   Margherita',
@@ -341,19 +343,19 @@ class Home extends StatelessWidget {
                                                         'Nunito',
                                                         fontWeight: FontWeight.w700,
                                                         fontSize: 18,
-                                                        color: Color(0xFF1E1E1E),
+                                                        color: const Color(0xFF1E1E1E),
                                                       ),
                                                     ),
                                                   ),
                                                   Container(
-                                                    margin: EdgeInsets.fromLTRB(0, 0, 2, 0),
+                                                    margin: const EdgeInsets.fromLTRB(0, 0, 2, 0),
                                                     child: Text(
                                                       '\$5.990',
                                                       style: GoogleFonts.getFont(
                                                         'Nunito',
                                                         fontWeight: FontWeight.w700,
                                                         fontSize: 18,
-                                                        color: Color(0xFFFF4B3A),
+                                                        color: const Color(0xFFFF4B3A),
                                                       ),
                                                     ),
                                                   ),
@@ -368,13 +370,13 @@ class Home extends StatelessWidget {
                                           child: Container(
                                             decoration: BoxDecoration(
                                               borderRadius: BorderRadius.circular(75),
-                                              image: DecorationImage(
+                                              image: const DecorationImage(
                                                 fit: BoxFit.cover,
                                                 image: AssetImage(
                                                   'assets/images/margherita.png',
                                                 ),
                                               ),
-                                              boxShadow: [
+                                              boxShadow: const [
                                                 BoxShadow(
                                                   color: Color(0x1A000000),
                                                   offset: Offset(0, 10),
@@ -382,7 +384,7 @@ class Home extends StatelessWidget {
                                                 ),
                                               ],
                                             ),
-                                            child: Container(
+                                            child: SizedBox(
                                               width: 150,
                                               height: 150,
                                             ),
@@ -403,8 +405,8 @@ class Home extends StatelessWidget {
                                         Container(
                                           decoration: BoxDecoration(
                                             borderRadius: BorderRadius.circular(40),
-                                            color: Color(0xFFFFFFFF),
-                                            boxShadow: [
+                                            color: const Color(0xFFFFFFFF),
+                                            boxShadow: const [
                                               BoxShadow(
                                                 color: Color(0x1A000000),
                                                 offset: Offset(0, 10),
@@ -415,13 +417,13 @@ class Home extends StatelessWidget {
                                           child: SizedBox(
                                             width: double.infinity,
                                             child: Container(
-                                              padding: EdgeInsets.fromLTRB(15, 142, 15, 28),
+                                              padding: const EdgeInsets.fromLTRB(15, 142, 15, 28),
                                               child: Column(
                                                 mainAxisAlignment: MainAxisAlignment.start,
                                                 crossAxisAlignment: CrossAxisAlignment.center,
                                                 children: [
                                                   Container(
-                                                    margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
+                                                    margin: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                                                     child: Text(
                                                       'Pizza
                                                   Quattro Formaggi',
@@ -430,19 +432,19 @@ class Home extends StatelessWidget {
                                                         'Nunito',
                                                         fontWeight: FontWeight.w700,
                                                         fontSize: 18,
-                                                        color: Color(0xFF1E1E1E),
+                                                        color: const Color(0xFF1E1E1E),
                                                       ),
                                                     ),
                                                   ),
                                                   Container(
-                                                    margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                                    margin: const EdgeInsets.fromLTRB(0, 0, 1, 0),
                                                     child: Text(
                                                       '\$5.990',
                                                       style: GoogleFonts.getFont(
                                                         'Nunito',
                                                         fontWeight: FontWeight.w700,
                                                         fontSize: 18,
-                                                        color: Color(0xFFFF4B3A),
+                                                        color: const Color(0xFFFF4B3A),
                                                       ),
                                                     ),
                                                   ),
@@ -458,13 +460,13 @@ class Home extends StatelessWidget {
                                           child: Container(
                                             decoration: BoxDecoration(
                                               borderRadius: BorderRadius.circular(75),
-                                              image: DecorationImage(
+                                              image: const DecorationImage(
                                                 fit: BoxFit.cover,
                                                 image: AssetImage(
                                                   'assets/images/quattro_formaggi.png',
                                                 ),
                                               ),
-                                              boxShadow: [
+                                              boxShadow: const [
                                                 BoxShadow(
                                                   color: Color(0x1A000000),
                                                   offset: Offset(0, 10),
@@ -472,7 +474,7 @@ class Home extends StatelessWidget {
                                                 ),
                                               ],
                                             ),
-                                            child: Container(
+                                            child: SizedBox(
                                               width: 150,
                                               height: 150,
                                             ),
@@ -493,8 +495,8 @@ class Home extends StatelessWidget {
                                         Container(
                                           decoration: BoxDecoration(
                                             borderRadius: BorderRadius.circular(40),
-                                            color: Color(0xFFFFFFFF),
-                                            boxShadow: [
+                                            color: const Color(0xFFFFFFFF),
+                                            boxShadow: const [
                                               BoxShadow(
                                                 color: Color(0x1A000000),
                                                 offset: Offset(0, 10),
@@ -505,13 +507,13 @@ class Home extends StatelessWidget {
                                           child: SizedBox(
                                             width: double.infinity,
                                             child: Container(
-                                              padding: EdgeInsets.fromLTRB(8.9, 142, 8.9, 28),
+                                              padding: const EdgeInsets.fromLTRB(8.9, 142, 8.9, 28),
                                               child: Column(
                                                 mainAxisAlignment: MainAxisAlignment.start,
                                                 crossAxisAlignment: CrossAxisAlignment.center,
                                                 children: [
                                                   Container(
-                                                    margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
+                                                    margin: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                                                     child: Text(
                                                       'Pizza
                                                   Prosciutto e Rucola',
@@ -520,19 +522,19 @@ class Home extends StatelessWidget {
                                                         'Nunito',
                                                         fontWeight: FontWeight.w700,
                                                         fontSize: 18,
-                                                        color: Color(0xFF1E1E1E),
+                                                        color: const Color(0xFF1E1E1E),
                                                       ),
                                                     ),
                                                   ),
                                                   Container(
-                                                    margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                                    margin: const EdgeInsets.fromLTRB(0, 0, 1, 0),
                                                     child: Text(
                                                       '\$5.990',
                                                       style: GoogleFonts.getFont(
                                                         'Nunito',
                                                         fontWeight: FontWeight.w700,
                                                         fontSize: 18,
-                                                        color: Color(0xFFFF4B3A),
+                                                        color: const Color(0xFFFF4B3A),
                                                       ),
                                                     ),
                                                   ),
@@ -548,13 +550,13 @@ class Home extends StatelessWidget {
                                           child: Container(
                                             decoration: BoxDecoration(
                                               borderRadius: BorderRadius.circular(75),
-                                              image: DecorationImage(
+                                              image: const DecorationImage(
                                                 fit: BoxFit.cover,
                                                 image: AssetImage(
                                                   'assets/images/prosciutto_erucola.png',
                                                 ),
                                               ),
-                                              boxShadow: [
+                                              boxShadow: const [
                                                 BoxShadow(
                                                   color: Color(0x1A000000),
                                                   offset: Offset(0, 10),
@@ -562,7 +564,7 @@ class Home extends StatelessWidget {
                                                 ),
                                               ],
                                             ),
-                                            child: Container(
+                                            child: SizedBox(
                                               width: 150,
                                               height: 150,
                                             ),
@@ -583,8 +585,8 @@ class Home extends StatelessWidget {
                                         Container(
                                           decoration: BoxDecoration(
                                             borderRadius: BorderRadius.circular(40),
-                                            color: Color(0xFFFFFFFF),
-                                            boxShadow: [
+                                            color: const Color(0xFFFFFFFF),
+                                            boxShadow: const [
                                               BoxShadow(
                                                 color: Color(0x1A000000),
                                                 offset: Offset(0, 10),
@@ -595,13 +597,13 @@ class Home extends StatelessWidget {
                                           child: SizedBox(
                                             width: double.infinity,
                                             child: Container(
-                                              padding: EdgeInsets.fromLTRB(0, 142, 0, 28),
+                                              padding: const EdgeInsets.fromLTRB(0, 142, 0, 28),
                                               child: Column(
                                                 mainAxisAlignment: MainAxisAlignment.start,
                                                 crossAxisAlignment: CrossAxisAlignment.center,
                                                 children: [
                                                   Container(
-                                                    margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
+                                                    margin: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                                                     child: Text(
                                                       'Pizza
                                                   Diavola',
@@ -610,19 +612,19 @@ class Home extends StatelessWidget {
                                                         'Nunito',
                                                         fontWeight: FontWeight.w700,
                                                         fontSize: 18,
-                                                        color: Color(0xFF1E1E1E),
+                                                        color: const Color(0xFF1E1E1E),
                                                       ),
                                                     ),
                                                   ),
                                                   Container(
-                                                    margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                                    margin: const EdgeInsets.fromLTRB(0, 0, 1, 0),
                                                     child: Text(
                                                       '\$5.990',
                                                       style: GoogleFonts.getFont(
                                                         'Nunito',
                                                         fontWeight: FontWeight.w700,
                                                         fontSize: 18,
-                                                        color: Color(0xFFFF4B3A),
+                                                        color: const Color(0xFFFF4B3A),
                                                       ),
                                                     ),
                                                   ),
@@ -638,13 +640,13 @@ class Home extends StatelessWidget {
                                           child: Container(
                                             decoration: BoxDecoration(
                                               borderRadius: BorderRadius.circular(75),
-                                              image: DecorationImage(
+                                              image: const DecorationImage(
                                                 fit: BoxFit.cover,
                                                 image: AssetImage(
                                                   'assets/images/diavola.png',
                                                 ),
                                               ),
-                                              boxShadow: [
+                                              boxShadow: const [
                                                 BoxShadow(
                                                   color: Color(0x1A000000),
                                                   offset: Offset(0, 10),
@@ -652,7 +654,7 @@ class Home extends StatelessWidget {
                                                 ),
                                               ],
                                             ),
-                                            child: Container(
+                                            child: SizedBox(
                                               width: 150,
                                               height: 150,
                                             ),
@@ -667,7 +669,7 @@ class Home extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.fromLTRB(15, 0, 15, 0),
+                          margin: const EdgeInsets.fromLTRB(15, 0, 15, 0),
                           child: Align(
                             alignment: Alignment.topLeft,
                             child: Text(
@@ -676,7 +678,7 @@ class Home extends StatelessWidget {
                                 'Nunito',
                                 fontWeight: FontWeight.w700,
                                 fontSize: 24,
-                                color: Color(0xFFFF4B3A),
+                                color: const Color(0xFFFF4B3A),
                               ),
                             ),
                           ),
@@ -693,15 +695,15 @@ class Home extends StatelessWidget {
                             SizedBox(
                               width: double.infinity,
                               child: Container(
-                                padding: EdgeInsets.fromLTRB(0, 29, 0, 0),
+                                padding: const EdgeInsets.fromLTRB(0, 29, 0, 0),
                                 child: Stack(
                                   clipBehavior: Clip.none,
                                   children: [
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(40),
-                                        color: Color(0xFFFFFFFF),
-                                        boxShadow: [
+                                        color: const Color(0xFFFFFFFF),
+                                        boxShadow: const [
                                           BoxShadow(
                                             color: Color(0x1A000000),
                                             offset: Offset(0, 10),
@@ -712,13 +714,13 @@ class Home extends StatelessWidget {
                                       child: SizedBox(
                                         width: double.infinity,
                                         child: Container(
-                                          padding: EdgeInsets.fromLTRB(0, 142, 0, 28),
+                                          padding: const EdgeInsets.fromLTRB(0, 142, 0, 28),
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                                                 child: Text(
                                                   'Spaghetti alla Carbonara',
                                                   textAlign: TextAlign.center,
@@ -726,19 +728,19 @@ class Home extends StatelessWidget {
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFF1E1E1E),
+                                                    color: const Color(0xFF1E1E1E),
                                                   ),
                                                 ),
                                               ),
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 2, 0),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 2, 0),
                                                 child: Text(
                                                   '\$5.990',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFFFF4B3A),
+                                                    color: const Color(0xFFFF4B3A),
                                                   ),
                                                 ),
                                               ),
@@ -754,13 +756,13 @@ class Home extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(75),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: AssetImage(
                                               'assets/images/spaghetti_alla_carbonara.png',
                                             ),
                                           ),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Color(0x1A000000),
                                               offset: Offset(0, 10),
@@ -768,7 +770,7 @@ class Home extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 150,
                                           height: 150,
                                         ),
@@ -789,8 +791,8 @@ class Home extends StatelessWidget {
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(40),
-                                        color: Color(0xFFFFFFFF),
-                                        boxShadow: [
+                                        color: const Color(0xFFFFFFFF),
+                                        boxShadow: const [
                                           BoxShadow(
                                             color: Color(0x1A000000),
                                             offset: Offset(0, 10),
@@ -801,13 +803,13 @@ class Home extends StatelessWidget {
                                       child: SizedBox(
                                         width: double.infinity,
                                         child: Container(
-                                          padding: EdgeInsets.fromLTRB(10.9, 142, 10.9, 28),
+                                          padding: const EdgeInsets.fromLTRB(10.9, 142, 10.9, 28),
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                                                 child: Text(
                                                   'Tagliatelle al Ragù Bolognese',
                                                   textAlign: TextAlign.center,
@@ -815,19 +817,19 @@ class Home extends StatelessWidget {
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFF1E1E1E),
+                                                    color: const Color(0xFF1E1E1E),
                                                   ),
                                                 ),
                                               ),
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 1, 0),
                                                 child: Text(
                                                   '\$5.990',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFFFF4B3A),
+                                                    color: const Color(0xFFFF4B3A),
                                                   ),
                                                 ),
                                               ),
@@ -843,13 +845,13 @@ class Home extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(75),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: AssetImage(
                                               'assets/images/tagliatelle_al_rag_bolognese.png',
                                             ),
                                           ),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Color(0x1A000000),
                                               offset: Offset(0, 10),
@@ -857,7 +859,7 @@ class Home extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 150,
                                           height: 150,
                                         ),
@@ -878,8 +880,8 @@ class Home extends StatelessWidget {
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(40),
-                                        color: Color(0xFFFFFFFF),
-                                        boxShadow: [
+                                        color: const Color(0xFFFFFFFF),
+                                        boxShadow: const [
                                           BoxShadow(
                                             color: Color(0x1A000000),
                                             offset: Offset(0, 10),
@@ -890,13 +892,13 @@ class Home extends StatelessWidget {
                                       child: SizedBox(
                                         width: double.infinity,
                                         child: Container(
-                                          padding: EdgeInsets.fromLTRB(0, 142, 0, 28),
+                                          padding: const EdgeInsets.fromLTRB(0, 142, 0, 28),
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                                                 child: Text(
                                                   'Penne al Pesto Genovese',
                                                   textAlign: TextAlign.center,
@@ -904,19 +906,19 @@ class Home extends StatelessWidget {
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFF1E1E1E),
+                                                    color: const Color(0xFF1E1E1E),
                                                   ),
                                                 ),
                                               ),
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 1, 0),
                                                 child: Text(
                                                   '\$5.990',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFFFF4B3A),
+                                                    color: const Color(0xFFFF4B3A),
                                                   ),
                                                 ),
                                               ),
@@ -932,13 +934,13 @@ class Home extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(75),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: AssetImage(
                                               'assets/images/penne_al_pesto_genovese.png',
                                             ),
                                           ),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Color(0x1A000000),
                                               offset: Offset(0, 10),
@@ -946,7 +948,7 @@ class Home extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 150,
                                           height: 150,
                                         ),
@@ -967,8 +969,8 @@ class Home extends StatelessWidget {
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(40),
-                                        color: Color(0xFFFFFFFF),
-                                        boxShadow: [
+                                        color: const Color(0xFFFFFFFF),
+                                        boxShadow: const [
                                           BoxShadow(
                                             color: Color(0x1A000000),
                                             offset: Offset(0, 10),
@@ -979,13 +981,13 @@ class Home extends StatelessWidget {
                                       child: SizedBox(
                                         width: double.infinity,
                                         child: Container(
-                                          padding: EdgeInsets.fromLTRB(0, 142, 0, 28),
+                                          padding: const EdgeInsets.fromLTRB(0, 142, 0, 28),
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 15),
                                                 child: Text(
                                                   'Lasagna alla Bolognese',
                                                   textAlign: TextAlign.center,
@@ -993,19 +995,19 @@ class Home extends StatelessWidget {
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFF1E1E1E),
+                                                    color: const Color(0xFF1E1E1E),
                                                   ),
                                                 ),
                                               ),
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 1, 0),
                                                 child: Text(
                                                   '\$5.990',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFFFF4B3A),
+                                                    color: const Color(0xFFFF4B3A),
                                                   ),
                                                 ),
                                               ),
@@ -1021,13 +1023,13 @@ class Home extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(75),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: AssetImage(
                                               'assets/images/lasagna_alla_bolognese.png',
                                             ),
                                           ),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Color(0x1A000000),
                                               offset: Offset(0, 10),
@@ -1035,7 +1037,7 @@ class Home extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 150,
                                           height: 150,
                                         ),
@@ -1060,7 +1062,7 @@ class Home extends StatelessWidget {
                             'Nunito',
                             fontWeight: FontWeight.w700,
                             fontSize: 24,
-                            color: Color(0xFFFF4B3A),
+                            color: const Color(0xFFFF4B3A),
                           ),
                         ),
                       ),
@@ -1075,15 +1077,15 @@ class Home extends StatelessWidget {
                             SizedBox(
                               width: double.infinity,
                               child: Container(
-                                padding: EdgeInsets.fromLTRB(0, 29, 0, 0),
+                                padding: const EdgeInsets.fromLTRB(0, 29, 0, 0),
                                 child: Stack(
                                   clipBehavior: Clip.none,
                                   children: [
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(40),
-                                        color: Color(0xFFFFFFFF),
-                                        boxShadow: [
+                                        color: const Color(0xFFFFFFFF),
+                                        boxShadow: const [
                                           BoxShadow(
                                             color: Color(0x1A000000),
                                             offset: Offset(0, 10),
@@ -1094,32 +1096,32 @@ class Home extends StatelessWidget {
                                       child: SizedBox(
                                         width: double.infinity,
                                         child: Container(
-                                          padding: EdgeInsets.fromLTRB(0, 142, 0, 28),
+                                          padding: const EdgeInsets.fromLTRB(0, 142, 0, 28),
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 0, 40),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 40),
                                                 child: Text(
                                                   'Bruschetta',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFF1E1E1E),
+                                                    color: const Color(0xFF1E1E1E),
                                                   ),
                                                 ),
                                               ),
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 2, 0),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 2, 0),
                                                 child: Text(
                                                   '\$5.990',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFFFF4B3A),
+                                                    color: const Color(0xFFFF4B3A),
                                                   ),
                                                 ),
                                               ),
@@ -1135,13 +1137,13 @@ class Home extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(75),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: AssetImage(
                                               'assets/images/bruschetta.png',
                                             ),
                                           ),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Color(0x1A000000),
                                               offset: Offset(0, 10),
@@ -1149,7 +1151,7 @@ class Home extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 150,
                                           height: 150,
                                         ),
@@ -1170,8 +1172,8 @@ class Home extends StatelessWidget {
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(40),
-                                        color: Color(0xFFFFFFFF),
-                                        boxShadow: [
+                                        color: const Color(0xFFFFFFFF),
+                                        boxShadow: const [
                                           BoxShadow(
                                             color: Color(0x1A000000),
                                             offset: Offset(0, 10),
@@ -1182,32 +1184,32 @@ class Home extends StatelessWidget {
                                       child: SizedBox(
                                         width: double.infinity,
                                         child: Container(
-                                          padding: EdgeInsets.fromLTRB(0, 142, 0, 28),
+                                          padding: const EdgeInsets.fromLTRB(0, 142, 0, 28),
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 0, 40),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 40),
                                                 child: Text(
                                                   'Caprese',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFF1E1E1E),
+                                                    color: const Color(0xFF1E1E1E),
                                                   ),
                                                 ),
                                               ),
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 1, 0),
                                                 child: Text(
                                                   '\$5.990',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFFFF4B3A),
+                                                    color: const Color(0xFFFF4B3A),
                                                   ),
                                                 ),
                                               ),
@@ -1223,13 +1225,13 @@ class Home extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(75),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: AssetImage(
                                               'assets/images/caprese.png',
                                             ),
                                           ),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Color(0x1A000000),
                                               offset: Offset(0, 10),
@@ -1237,7 +1239,7 @@ class Home extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 150,
                                           height: 150,
                                         ),
@@ -1258,8 +1260,8 @@ class Home extends StatelessWidget {
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(40),
-                                        color: Color(0xFFFFFFFF),
-                                        boxShadow: [
+                                        color: const Color(0xFFFFFFFF),
+                                        boxShadow: const [
                                           BoxShadow(
                                             color: Color(0x1A000000),
                                             offset: Offset(0, 10),
@@ -1270,32 +1272,32 @@ class Home extends StatelessWidget {
                                       child: SizedBox(
                                         width: double.infinity,
                                         child: Container(
-                                          padding: EdgeInsets.fromLTRB(0, 142, 0, 28),
+                                          padding: const EdgeInsets.fromLTRB(0, 142, 0, 28),
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 0, 40),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 40),
                                                 child: Text(
                                                   'Arancini',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFF1E1E1E),
+                                                    color: const Color(0xFF1E1E1E),
                                                   ),
                                                 ),
                                               ),
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 1, 0),
                                                 child: Text(
                                                   '\$5.990',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFFFF4B3A),
+                                                    color: const Color(0xFFFF4B3A),
                                                   ),
                                                 ),
                                               ),
@@ -1311,13 +1313,13 @@ class Home extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(75),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: AssetImage(
                                               'assets/images/arancini.png',
                                             ),
                                           ),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Color(0x1A000000),
                                               offset: Offset(0, 10),
@@ -1325,7 +1327,7 @@ class Home extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 150,
                                           height: 150,
                                         ),
@@ -1346,8 +1348,8 @@ class Home extends StatelessWidget {
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(40),
-                                        color: Color(0xFFFFFFFF),
-                                        boxShadow: [
+                                        color: const Color(0xFFFFFFFF),
+                                        boxShadow: const [
                                           BoxShadow(
                                             color: Color(0x1A000000),
                                             offset: Offset(0, 10),
@@ -1358,32 +1360,32 @@ class Home extends StatelessWidget {
                                       child: SizedBox(
                                         width: double.infinity,
                                         child: Container(
-                                          padding: EdgeInsets.fromLTRB(10.5, 142, 10.5, 28),
+                                          padding: const EdgeInsets.fromLTRB(10.5, 142, 10.5, 28),
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 0, 40),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 40),
                                                 child: Text(
                                                   'Provolone al Forno',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFF1E1E1E),
+                                                    color: const Color(0xFF1E1E1E),
                                                   ),
                                                 ),
                                               ),
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 1, 0),
                                                 child: Text(
                                                   '\$5.990',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFFFF4B3A),
+                                                    color: const Color(0xFFFF4B3A),
                                                   ),
                                                 ),
                                               ),
@@ -1399,13 +1401,13 @@ class Home extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(75),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: AssetImage(
                                               'assets/images/provolone_al_forno.png',
                                             ),
                                           ),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Color(0x1A000000),
                                               offset: Offset(0, 10),
@@ -1413,7 +1415,7 @@ class Home extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 150,
                                           height: 150,
                                         ),
@@ -1438,7 +1440,7 @@ class Home extends StatelessWidget {
                             'Nunito',
                             fontWeight: FontWeight.w700,
                             fontSize: 24,
-                            color: Color(0xFFFF4B3A),
+                            color: const Color(0xFFFF4B3A),
                           ),
                         ),
                       ),
@@ -1453,15 +1455,15 @@ class Home extends StatelessWidget {
                             SizedBox(
                               width: double.infinity,
                               child: Container(
-                                padding: EdgeInsets.fromLTRB(0, 29, 0, 0),
+                                padding: const EdgeInsets.fromLTRB(0, 29, 0, 0),
                                 child: Stack(
                                   clipBehavior: Clip.none,
                                   children: [
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(40),
-                                        color: Color(0xFFFFFFFF),
-                                        boxShadow: [
+                                        color: const Color(0xFFFFFFFF),
+                                        boxShadow: const [
                                           BoxShadow(
                                             color: Color(0x1A000000),
                                             offset: Offset(0, 10),
@@ -1472,32 +1474,32 @@ class Home extends StatelessWidget {
                                       child: SizedBox(
                                         width: double.infinity,
                                         child: Container(
-                                          padding: EdgeInsets.fromLTRB(0, 142, 0, 28),
+                                          padding: const EdgeInsets.fromLTRB(0, 142, 0, 28),
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 0, 40),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 40),
                                                 child: Text(
                                                   'Limoncello',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFF1E1E1E),
+                                                    color: const Color(0xFF1E1E1E),
                                                   ),
                                                 ),
                                               ),
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 2, 0),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 2, 0),
                                                 child: Text(
                                                   '\$5.990',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFFFF4B3A),
+                                                    color: const Color(0xFFFF4B3A),
                                                   ),
                                                 ),
                                               ),
@@ -1513,13 +1515,13 @@ class Home extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(75),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: AssetImage(
                                               'assets/images/limoncello.png',
                                             ),
                                           ),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Color(0x1A000000),
                                               offset: Offset(0, 10),
@@ -1527,7 +1529,7 @@ class Home extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 150,
                                           height: 150,
                                         ),
@@ -1548,8 +1550,8 @@ class Home extends StatelessWidget {
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(40),
-                                        color: Color(0xFFFFFFFF),
-                                        boxShadow: [
+                                        color: const Color(0xFFFFFFFF),
+                                        boxShadow: const [
                                           BoxShadow(
                                             color: Color(0x1A000000),
                                             offset: Offset(0, 10),
@@ -1560,32 +1562,32 @@ class Home extends StatelessWidget {
                                       child: SizedBox(
                                         width: double.infinity,
                                         child: Container(
-                                          padding: EdgeInsets.fromLTRB(0, 142, 0, 28),
+                                          padding: const EdgeInsets.fromLTRB(0, 142, 0, 28),
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 0, 40),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 40),
                                                 child: Text(
                                                   'Aperol Spritz',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFF1E1E1E),
+                                                    color: const Color(0xFF1E1E1E),
                                                   ),
                                                 ),
                                               ),
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 1, 0),
                                                 child: Text(
                                                   '\$5.990',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFFFF4B3A),
+                                                    color: const Color(0xFFFF4B3A),
                                                   ),
                                                 ),
                                               ),
@@ -1601,13 +1603,13 @@ class Home extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(75),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: AssetImage(
                                               'assets/images/aperol_spritz.png',
                                             ),
                                           ),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Color(0x1A000000),
                                               offset: Offset(0, 10),
@@ -1615,7 +1617,7 @@ class Home extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 150,
                                           height: 150,
                                         ),
@@ -1636,8 +1638,8 @@ class Home extends StatelessWidget {
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(40),
-                                        color: Color(0xFFFFFFFF),
-                                        boxShadow: [
+                                        color: const Color(0xFFFFFFFF),
+                                        boxShadow: const [
                                           BoxShadow(
                                             color: Color(0x1A000000),
                                             offset: Offset(0, 10),
@@ -1648,32 +1650,32 @@ class Home extends StatelessWidget {
                                       child: SizedBox(
                                         width: double.infinity,
                                         child: Container(
-                                          padding: EdgeInsets.fromLTRB(0, 142, 0, 28),
+                                          padding: const EdgeInsets.fromLTRB(0, 142, 0, 28),
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 0, 40),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 40),
                                                 child: Text(
                                                   'Vino Chianti',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFF1E1E1E),
+                                                    color: const Color(0xFF1E1E1E),
                                                   ),
                                                 ),
                                               ),
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 1, 0),
                                                 child: Text(
                                                   '\$5.990',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFFFF4B3A),
+                                                    color: const Color(0xFFFF4B3A),
                                                   ),
                                                 ),
                                               ),
@@ -1689,13 +1691,13 @@ class Home extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(75),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: AssetImage(
                                               'assets/images/vino_chianti.png',
                                             ),
                                           ),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Color(0x1A000000),
                                               offset: Offset(0, 10),
@@ -1703,7 +1705,7 @@ class Home extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 150,
                                           height: 150,
                                         ),
@@ -1724,8 +1726,8 @@ class Home extends StatelessWidget {
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(40),
-                                        color: Color(0xFFFFFFFF),
-                                        boxShadow: [
+                                        color: const Color(0xFFFFFFFF),
+                                        boxShadow: const [
                                           BoxShadow(
                                             color: Color(0x1A000000),
                                             offset: Offset(0, 10),
@@ -1736,32 +1738,32 @@ class Home extends StatelessWidget {
                                       child: SizedBox(
                                         width: double.infinity,
                                         child: Container(
-                                          padding: EdgeInsets.fromLTRB(0, 142, 0, 28),
+                                          padding: const EdgeInsets.fromLTRB(0, 142, 0, 28),
                                           child: Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             crossAxisAlignment: CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 0, 40),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 40),
                                                 child: Text(
                                                   'Espresso',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFF1E1E1E),
+                                                    color: const Color(0xFF1E1E1E),
                                                   ),
                                                 ),
                                               ),
                                               Container(
-                                                margin: EdgeInsets.fromLTRB(0, 0, 1, 0),
+                                                margin: const EdgeInsets.fromLTRB(0, 0, 1, 0),
                                                 child: Text(
                                                   '\$5.990',
                                                   style: GoogleFonts.getFont(
                                                     'Nunito',
                                                     fontWeight: FontWeight.w700,
                                                     fontSize: 18,
-                                                    color: Color(0xFFFF4B3A),
+                                                    color: const Color(0xFFFF4B3A),
                                                   ),
                                                 ),
                                               ),
@@ -1777,13 +1779,13 @@ class Home extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(75),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             fit: BoxFit.cover,
                                             image: AssetImage(
                                               'assets/images/espresso.png',
                                             ),
                                           ),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               color: Color(0x1A000000),
                                               offset: Offset(0, 10),
@@ -1791,7 +1793,7 @@ class Home extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 150,
                                           height: 150,
                                         ),
@@ -1810,7 +1812,7 @@ class Home extends StatelessWidget {
               ),
             ),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color(0xFFFFFFFF),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40),
@@ -1827,15 +1829,15 @@ class Home extends StatelessWidget {
               child: SizedBox(
                 width: 391,
                 child: Container(
-                  padding: EdgeInsets.fromLTRB(0, 28, 0, 24),
+                  padding: const EdgeInsets.fromLTRB(0, 28, 0, 24),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        margin: EdgeInsets.fromLTRB(0, 0, 14, 0),
+                        margin: const EdgeInsets.fromLTRB(0, 0, 14, 0),
                         width: 27,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           boxShadow: [
                             BoxShadow(
                               color: Color(0x1A000000),
@@ -1850,7 +1852,7 @@ class Home extends StatelessWidget {
                             'Roboto Condensed',
                             fontWeight: FontWeight.w900,
                             fontSize: 24,
-                            color: Color(0xFFFF4B3A),
+                            color: const Color(0xFFFF4B3A),
                           ),
                         ),
                       ),
@@ -1860,7 +1862,7 @@ class Home extends StatelessWidget {
                           'Roboto Condensed',
                           fontWeight: FontWeight.w900,
                           fontSize: 24,
-                          color: Color(0xFFB0B0B0),
+                          color: const Color(0xFFB0B0B0),
                         ),
                       ),
                       Text(
@@ -1869,7 +1871,7 @@ class Home extends StatelessWidget {
                           'Roboto Condensed',
                           fontWeight: FontWeight.w900,
                           fontSize: 24,
-                          color: Color(0xFFB0B0B0),
+                          color: const Color(0xFFB0B0B0),
                         ),
                       ),
                       Text(
@@ -1878,7 +1880,7 @@ class Home extends StatelessWidget {
                           'Roboto Condensed',
                           fontWeight: FontWeight.w900,
                           fontSize: 24,
-                          color: Color(0xFFB0B0B0),
+                          color: const Color(0xFFB0B0B0),
                         ),
                       ),
                     ],

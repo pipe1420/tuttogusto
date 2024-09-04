@@ -5,21 +5,23 @@ import 'package:flutter_app/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CarritoCompraRealizada extends StatelessWidget {
+  const CarritoCompraRealizada({super.key});
+
   @override
   Widget build(BuildContext context) {
     return 
     Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Color(0xF2FFFFFF),
       ),
       child: Container(
-        padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
+        padding: const EdgeInsets.fromLTRB(0, 0, 0, 1),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              margin: EdgeInsets.fromLTRB(0, 0, 0, 56),
+              margin: const EdgeInsets.fromLTRB(0, 0, 0, 56),
               child: Stack(
                 children: [
                   Positioned(
@@ -38,13 +40,13 @@ class CarritoCompraRealizada extends StatelessWidget {
             SizedBox(
                     width: 870,
                     child: Container(
-                      padding: EdgeInsets.fromLTRB(0, 726, 0, 34),
+                      padding: const EdgeInsets.fromLTRB(0, 726, 0, 34),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 0, 26),
+                            margin: const EdgeInsets.fromLTRB(0, 0, 0, 26),
                             child: SizedBox(
                               width: 343.6,
                               child: Row(
@@ -52,7 +54,7 @@ class CarritoCompraRealizada extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
-                                    margin: EdgeInsets.fromLTRB(0, 28, 19, 31),
+                                    margin: const EdgeInsets.fromLTRB(0, 28, 19, 31),
                                     child: SizedBox(
                                       width: 28,
                                       child: Text(
@@ -61,7 +63,7 @@ class CarritoCompraRealizada extends StatelessWidget {
                                           'Roboto Condensed',
                                           fontWeight: FontWeight.w900,
                                           fontSize: 32,
-                                          color: Color(0xFFE5E5E5),
+                                          color: const Color(0xFFE5E5E5),
                                         ),
                                       ),
                                     ),
@@ -71,9 +73,9 @@ class CarritoCompraRealizada extends StatelessWidget {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        margin: EdgeInsets.fromLTRB(0, 0, 95.7, 0),
+                                        margin: const EdgeInsets.fromLTRB(0, 0, 95.7, 0),
                                         child: Container(
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             image: DecorationImage(
                                               fit: BoxFit.cover,
                                               image: AssetImage(
@@ -81,21 +83,21 @@ class CarritoCompraRealizada extends StatelessWidget {
                                               ),
                                             ),
                                           ),
-                                          child: Container(
+                                          child: SizedBox(
                                             width: 107,
                                             height: 97,
                                           ),
                                         ),
                                       ),
                                       Container(
-                                        margin: EdgeInsets.fromLTRB(0, 32, 0, 27),
+                                        margin: const EdgeInsets.fromLTRB(0, 32, 0, 27),
                                         child: Text(
                                           '',
                                           style: GoogleFonts.getFont(
                                             'Roboto Condensed',
                                             fontWeight: FontWeight.w900,
                                             fontSize: 32,
-                                            color: Color(0xFFE5E5E5),
+                                            color: const Color(0xFFE5E5E5),
                                           ),
                                         ),
                                       ),
@@ -106,14 +108,14 @@ class CarritoCompraRealizada extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                            margin: const EdgeInsets.fromLTRB(8, 0, 0, 0),
                             child: Text(
                               'Carrito de Compras',
                               style: GoogleFonts.getFont(
                                 'Nunito',
                                 fontWeight: FontWeight.w700,
                                 fontSize: 24,
-                                color: Color(0xFF1E1E1E),
+                                color: const Color(0xFF1E1E1E),
                               ),
                             ),
                           ),
@@ -125,32 +127,32 @@ class CarritoCompraRealizada extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(26, 0, 25, 26),
+              margin: const EdgeInsets.fromLTRB(26, 0, 25, 26),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Color(0xFFFFFFFF),
+                  color: const Color(0xFFFFFFFF),
                   borderRadius: BorderRadius.circular(40),
                 ),
                 child: Container(
-                  padding: EdgeInsets.fromLTRB(0, 27, 0, 52),
+                  padding: const EdgeInsets.fromLTRB(0, 27, 0, 52),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        margin: EdgeInsets.fromLTRB(0, 0, 53.5, 1),
+                        margin: const EdgeInsets.fromLTRB(0, 0, 53.5, 1),
                         child: Text(
                           '',
                           style: GoogleFonts.getFont(
                             'Roboto Condensed',
                             fontWeight: FontWeight.w900,
                             fontSize: 128,
-                            color: Color(0xFF42BA96),
+                            color: const Color(0xFF42BA96),
                           ),
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.fromLTRB(0, 0, 0, 26),
+                        margin: const EdgeInsets.fromLTRB(0, 0, 0, 26),
                         child: Text(
                           'Compra realizada  exitosamente!',
                           textAlign: TextAlign.center,
@@ -158,31 +160,31 @@ class CarritoCompraRealizada extends StatelessWidget {
                             'Nunito',
                             fontWeight: FontWeight.w700,
                             fontSize: 24,
-                            color: Color(0xFF1E1E1E),
+                            color: const Color(0xFF1E1E1E),
                           ),
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.fromLTRB(0, 0, 0, 6),
+                        margin: const EdgeInsets.fromLTRB(0, 0, 0, 6),
                         child: Text(
                           'N° de Pedido : ',
                           style: GoogleFonts.getFont(
                             'Nunito',
                             fontWeight: FontWeight.w700,
                             fontSize: 18,
-                            color: Color(0xFF1E1E1E),
+                            color: const Color(0xFF1E1E1E),
                           ),
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.fromLTRB(0, 0, 6.8, 57),
+                        margin: const EdgeInsets.fromLTRB(0, 0, 6.8, 57),
                         child: Text(
                           '16824632',
                           style: GoogleFonts.getFont(
                             'Nunito',
                             fontWeight: FontWeight.w700,
                             fontSize: 24,
-                            color: Color(0xFFFF4B3A),
+                            color: const Color(0xFFFF4B3A),
                           ),
                         ),
                       ),
@@ -193,7 +195,7 @@ class CarritoCompraRealizada extends StatelessWidget {
                           'Nunito',
                           fontWeight: FontWeight.w700,
                           fontSize: 18,
-                          color: Color(0xFF1E1E1E),
+                          color: const Color(0xFF1E1E1E),
                         ),
                       ),
                     ],
@@ -202,8 +204,8 @@ class CarritoCompraRealizada extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(1, 0, 0, 0),
-              decoration: BoxDecoration(
+              margin: const EdgeInsets.fromLTRB(1, 0, 0, 0),
+              decoration: const BoxDecoration(
                 color: Color(0xFFFFFFFF),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40),
@@ -220,15 +222,15 @@ class CarritoCompraRealizada extends StatelessWidget {
               child: SizedBox(
                 width: 391,
                 child: Container(
-                  padding: EdgeInsets.fromLTRB(0, 28, 0, 24),
+                  padding: const EdgeInsets.fromLTRB(0, 28, 0, 24),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        margin: EdgeInsets.fromLTRB(0, 0, 14, 0),
+                        margin: const EdgeInsets.fromLTRB(0, 0, 14, 0),
                         width: 27,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           boxShadow: [
                             BoxShadow(
                               color: Color(0x1A000000),
@@ -243,7 +245,7 @@ class CarritoCompraRealizada extends StatelessWidget {
                             'Roboto Condensed',
                             fontWeight: FontWeight.w900,
                             fontSize: 24,
-                            color: Color(0xFFB0B0B0),
+                            color: const Color(0xFFB0B0B0),
                           ),
                         ),
                       ),
@@ -253,7 +255,7 @@ class CarritoCompraRealizada extends StatelessWidget {
                           'Roboto Condensed',
                           fontWeight: FontWeight.w900,
                           fontSize: 24,
-                          color: Color(0xFFFF4B3A),
+                          color: const Color(0xFFFF4B3A),
                         ),
                       ),
                       Text(
@@ -262,7 +264,7 @@ class CarritoCompraRealizada extends StatelessWidget {
                           'Roboto Condensed',
                           fontWeight: FontWeight.w900,
                           fontSize: 24,
-                          color: Color(0xFFB0B0B0),
+                          color: const Color(0xFFB0B0B0),
                         ),
                       ),
                       Text(
@@ -271,7 +273,7 @@ class CarritoCompraRealizada extends StatelessWidget {
                           'Roboto Condensed',
                           fontWeight: FontWeight.w900,
                           fontSize: 24,
-                          color: Color(0xFFB0B0B0),
+                          color: const Color(0xFFB0B0B0),
                         ),
                       ),
                     ],

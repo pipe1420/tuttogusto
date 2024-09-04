@@ -5,11 +5,12 @@ import 'package:flutter_app/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Inicio extends StatelessWidget {
+  const Inicio({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return 
-    Container(
-      decoration: BoxDecoration(
+    return Container(
+      decoration: const BoxDecoration(
         color: Color(0xFFFFFFFF),
       ),
       child: Stack(
@@ -18,7 +19,7 @@ class Inicio extends StatelessWidget {
             right: -837,
             top: -50,
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment(0, -1),
                   end: Alignment(0, 1),
@@ -31,22 +32,22 @@ class Inicio extends StatelessWidget {
                   ),
                 ),
               ),
-              child: Container(
+              child: SizedBox(
                 width: 1920,
                 height: 1076,
               ),
             ),
           ),
-    Container(
-            padding: EdgeInsets.fromLTRB(34, 0, 35, 58),
+          Container(
+            padding: const EdgeInsets.fromLTRB(34, 0, 35, 58),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                  margin: EdgeInsets.fromLTRB(0, 0, 0, 388),
+                  margin: const EdgeInsets.fromLTRB(0, 0, 0, 388),
                   child: Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       image: DecorationImage(
                         fit: BoxFit.cover,
                         image: AssetImage(
@@ -54,36 +55,38 @@ class Inicio extends StatelessWidget {
                         ),
                       ),
                     ),
-                    child: Container(
+                    child: SizedBox(
                       width: 321,
                       height: 313,
                     ),
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(1, 0, 0, 0),
+                  margin: const EdgeInsets.fromLTRB(1, 0, 0, 0),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Color(0xFFFF4B3A),
+                      color: const Color(0xFFFF4B3A),
                       borderRadius: BorderRadius.circular(40),
                     ),
                     child: Container(
                       width: 300,
-                      padding: EdgeInsets.fromLTRB(0, 16, 2, 19),
-                      child: Text(
-                        'Iniciar Sesión',
-                        style: GoogleFonts.getFont(
-                          'Nunito',
-                          fontWeight: FontWeight.w700,
-                          fontSize: 18,
-                          color: Color(0xFFFFFFFF),
+                      padding: const EdgeInsets.fromLTRB(0, 16, 2, 19),
+                      child: Center(
+                        child: Text(
+                          'Iniciar Sesión',
+                          style: GoogleFonts.getFont(
+                            'Nunito',
+                            fontWeight: FontWeight.w700,
+                            fontSize: 18,
+                            color: const Color(0xFFFFFFFF),
+                          ),
                         ),
                       ),
                     ),
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(1, 0, 0, 0),
+                  margin: const EdgeInsets.fromLTRB(1, 0, 0, 0),
                   child: RichText(
                     text: TextSpan(
                       text: 'No tienes cuenta? ',
@@ -91,7 +94,7 @@ class Inicio extends StatelessWidget {
                         'Nunito',
                         fontWeight: FontWeight.w700,
                         fontSize: 18,
-                        color: Color(0xFFFFFFFF),
+                        color: const Color(0xFFFFFFFF),
                       ),
                       children: [
                         TextSpan(
@@ -102,8 +105,8 @@ class Inicio extends StatelessWidget {
                             fontSize: 18,
                             decoration: TextDecoration.underline,
                             height: 1.3,
-                            color: Color(0xFFFF4B3A),
-                            decorationColor: Color(0xFFFF4B3A),
+                            color: const Color(0xFFFF4B3A),
+                            decorationColor: const Color(0xFFFF4B3A),
                           ),
                         ),
                       ],

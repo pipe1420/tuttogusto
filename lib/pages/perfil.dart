@@ -5,11 +5,13 @@ import 'package:flutter_app/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Perfil extends StatelessWidget {
+  const Perfil({super.key});
+
   @override
   Widget build(BuildContext context) {
     return 
     Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Color(0xF2FFFFFF),
       ),
       child: Column(
@@ -17,7 +19,7 @@ class Perfil extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            margin: EdgeInsets.fromLTRB(0, 0, 0, 31),
+            margin: const EdgeInsets.fromLTRB(0, 0, 0, 31),
             child: Stack(
               children: [
                 Positioned(
@@ -36,13 +38,13 @@ class Perfil extends StatelessWidget {
           SizedBox(
                   width: 870,
                   child: Container(
-                    padding: EdgeInsets.fromLTRB(0, 726, 0, 34),
+                    padding: const EdgeInsets.fromLTRB(0, 726, 0, 34),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          margin: EdgeInsets.fromLTRB(0, 0, 0, 26),
+                          margin: const EdgeInsets.fromLTRB(0, 0, 0, 26),
                           child: SizedBox(
                             width: 343.6,
                             child: Row(
@@ -50,7 +52,7 @@ class Perfil extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.fromLTRB(0, 28, 19, 31),
+                                  margin: const EdgeInsets.fromLTRB(0, 28, 19, 31),
                                   child: SizedBox(
                                     width: 28,
                                     child: Text(
@@ -59,21 +61,21 @@ class Perfil extends StatelessWidget {
                                         'Roboto Condensed',
                                         fontWeight: FontWeight.w900,
                                         fontSize: 32,
-                                        color: Color(0xFFE5E5E5),
+                                        color: const Color(0xFFE5E5E5),
                                       ),
                                     ),
                                   ),
                                 ),
                                 Container(
-                                  margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                  margin: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        margin: EdgeInsets.fromLTRB(0, 0, 95.7, 0),
+                                        margin: const EdgeInsets.fromLTRB(0, 0, 95.7, 0),
                                         child: Container(
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             image: DecorationImage(
                                               fit: BoxFit.cover,
                                               image: AssetImage(
@@ -81,21 +83,21 @@ class Perfil extends StatelessWidget {
                                               ),
                                             ),
                                           ),
-                                          child: Container(
+                                          child: SizedBox(
                                             width: 107,
                                             height: 97,
                                           ),
                                         ),
                                       ),
                                       Container(
-                                        margin: EdgeInsets.fromLTRB(0, 32, 0, 27),
+                                        margin: const EdgeInsets.fromLTRB(0, 32, 0, 27),
                                         child: Text(
                                           '',
                                           style: GoogleFonts.getFont(
                                             'Roboto Condensed',
                                             fontWeight: FontWeight.w900,
                                             fontSize: 32,
-                                            color: Color(0xFFE5E5E5),
+                                            color: const Color(0xFFE5E5E5),
                                           ),
                                         ),
                                       ),
@@ -107,14 +109,14 @@ class Perfil extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                          margin: const EdgeInsets.fromLTRB(8, 0, 0, 0),
                           child: Text(
                             'Perfil',
                             style: GoogleFonts.getFont(
                               'Nunito',
                               fontWeight: FontWeight.w700,
                               fontSize: 24,
-                              color: Color(0xFF1E1E1E),
+                              color: const Color(0xFF1E1E1E),
                             ),
                           ),
                         ),
@@ -126,38 +128,38 @@ class Perfil extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.fromLTRB(25, 0, 26, 12),
+            margin: const EdgeInsets.fromLTRB(25, 0, 26, 12),
             child: Container(
               decoration: BoxDecoration(
-                color: Color(0xFFFFFFFF),
+                color: const Color(0xFFFFFFFF),
                 borderRadius: BorderRadius.circular(40),
               ),
               child: Container(
-                padding: EdgeInsets.fromLTRB(20, 15, 19, 17.1),
+                padding: const EdgeInsets.fromLTRB(20, 15, 19, 17.1),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 0, 15, 27),
+                      margin: const EdgeInsets.fromLTRB(0, 0, 15, 27),
                       child: Text(
                         'Cuenta',
                         style: GoogleFonts.getFont(
                           'Nunito',
                           fontWeight: FontWeight.w700,
                           fontSize: 24,
-                          color: Color(0xFF1E1E1E),
+                          color: const Color(0xFF1E1E1E),
                         ),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 0, 14, 23.7),
+                      margin: const EdgeInsets.fromLTRB(0, 0, 14, 23.7),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            margin: EdgeInsets.fromLTRB(6, 0, 6, 7.4),
+                            margin: const EdgeInsets.fromLTRB(6, 0, 6, 7.4),
                             child: Align(
                               alignment: Alignment.topLeft,
                               child: Text(
@@ -166,16 +168,16 @@ class Perfil extends StatelessWidget {
                                   'Nunito',
                                   fontWeight: FontWeight.w700,
                                   fontSize: 18,
-                                  color: Color(0xFFB0B0B0),
+                                  color: const Color(0xFFB0B0B0),
                                 ),
                               ),
                             ),
                           ),
                           Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xFFB0B0B0),
                             ),
-                            child: Container(
+                            child: SizedBox(
                               width: 252,
                               height: 0,
                             ),
@@ -184,13 +186,13 @@ class Perfil extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 0, 14, 28.5),
+                      margin: const EdgeInsets.fromLTRB(0, 0, 14, 28.5),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            margin: EdgeInsets.fromLTRB(6, 0, 6, 7.4),
+                            margin: const EdgeInsets.fromLTRB(6, 0, 6, 7.4),
                             child: Align(
                               alignment: Alignment.topLeft,
                               child: Text(
@@ -199,16 +201,16 @@ class Perfil extends StatelessWidget {
                                   'Nunito',
                                   fontWeight: FontWeight.w700,
                                   fontSize: 18,
-                                  color: Color(0xFFB0B0B0),
+                                  color: const Color(0xFFB0B0B0),
                                 ),
                               ),
                             ),
                           ),
                           Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xFFB0B0B0),
                             ),
-                            child: Container(
+                            child: SizedBox(
                               width: 252,
                               height: 0,
                             ),
@@ -217,13 +219,13 @@ class Perfil extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 0, 14, 21.5),
+                      margin: const EdgeInsets.fromLTRB(0, 0, 14, 21.5),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            margin: EdgeInsets.fromLTRB(6, 0, 6, 8.5),
+                            margin: const EdgeInsets.fromLTRB(6, 0, 6, 8.5),
                             child: Align(
                               alignment: Alignment.topLeft,
                               child: Text(
@@ -232,16 +234,16 @@ class Perfil extends StatelessWidget {
                                   'Nunito',
                                   fontWeight: FontWeight.w700,
                                   fontSize: 18,
-                                  color: Color(0xFFB0B0B0),
+                                  color: const Color(0xFFB0B0B0),
                                 ),
                               ),
                             ),
                           ),
                           Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xFFB0B0B0),
                             ),
-                            child: Container(
+                            child: SizedBox(
                               width: 252,
                               height: 0,
                             ),
@@ -250,13 +252,13 @@ class Perfil extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 0, 14, 166.5),
+                      margin: const EdgeInsets.fromLTRB(0, 0, 14, 166.5),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            margin: EdgeInsets.fromLTRB(6, 0, 6, 8.5),
+                            margin: const EdgeInsets.fromLTRB(6, 0, 6, 8.5),
                             child: Align(
                               alignment: Alignment.topLeft,
                               child: Text(
@@ -265,16 +267,16 @@ class Perfil extends StatelessWidget {
                                   'Nunito',
                                   fontWeight: FontWeight.w700,
                                   fontSize: 18,
-                                  color: Color(0xFFB0B0B0),
+                                  color: const Color(0xFFB0B0B0),
                                 ),
                               ),
                             ),
                           ),
                           Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xFFB0B0B0),
                             ),
-                            child: Container(
+                            child: SizedBox(
                               width: 252,
                               height: 0,
                             ),
@@ -284,18 +286,18 @@ class Perfil extends StatelessWidget {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: Color(0xFFFF4B3A),
+                        color: const Color(0xFFFF4B3A),
                         borderRadius: BorderRadius.circular(40),
                       ),
                       child: Container(
-                        padding: EdgeInsets.fromLTRB(0, 17.3, 2, 22.6),
+                        padding: const EdgeInsets.fromLTRB(0, 17.3, 2, 22.6),
                         child: Text(
                           'Guardar',
                           style: GoogleFonts.getFont(
                             'Nunito',
                             fontWeight: FontWeight.w700,
                             fontSize: 18,
-                            color: Color(0xFFFFFFFF),
+                            color: const Color(0xFFFFFFFF),
                           ),
                         ),
                       ),
@@ -306,7 +308,7 @@ class Perfil extends StatelessWidget {
             ),
           ),
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color(0xFFFFFFFF),
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(40),
@@ -323,15 +325,15 @@ class Perfil extends StatelessWidget {
             child: SizedBox(
               width: 391,
               child: Container(
-                padding: EdgeInsets.fromLTRB(0, 27, 0, 25),
+                padding: const EdgeInsets.fromLTRB(0, 27, 0, 25),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 0, 14, 0),
+                      margin: const EdgeInsets.fromLTRB(0, 0, 14, 0),
                       width: 27,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         boxShadow: [
                           BoxShadow(
                             color: Color(0x1A000000),
@@ -346,7 +348,7 @@ class Perfil extends StatelessWidget {
                           'Roboto Condensed',
                           fontWeight: FontWeight.w900,
                           fontSize: 24,
-                          color: Color(0xFFB0B0B0),
+                          color: const Color(0xFFB0B0B0),
                         ),
                       ),
                     ),
@@ -356,7 +358,7 @@ class Perfil extends StatelessWidget {
                         'Roboto Condensed',
                         fontWeight: FontWeight.w900,
                         fontSize: 24,
-                        color: Color(0xFFB0B0B0),
+                        color: const Color(0xFFB0B0B0),
                       ),
                     ),
                     Text(
@@ -365,7 +367,7 @@ class Perfil extends StatelessWidget {
                         'Roboto Condensed',
                         fontWeight: FontWeight.w900,
                         fontSize: 24,
-                        color: Color(0xFFB0B0B0),
+                        color: const Color(0xFFB0B0B0),
                       ),
                     ),
                     Text(
@@ -374,7 +376,7 @@ class Perfil extends StatelessWidget {
                         'Roboto Condensed',
                         fontWeight: FontWeight.w900,
                         fontSize: 24,
-                        color: Color(0xFFFF4B3A),
+                        color: const Color(0xFFFF4B3A),
                       ),
                     ),
                   ],

@@ -5,11 +5,13 @@ import 'package:flutter_app/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Opciones extends StatelessWidget {
+  const Opciones({super.key});
+
   @override
   Widget build(BuildContext context) {
     return 
     Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Color(0xF2FFFFFF),
       ),
       child: Column(
@@ -17,7 +19,7 @@ class Opciones extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            margin: EdgeInsets.fromLTRB(0, 0, 0, 40),
+            margin: const EdgeInsets.fromLTRB(0, 0, 0, 40),
             child: Stack(
               children: [
                 Positioned(
@@ -36,13 +38,13 @@ class Opciones extends StatelessWidget {
           SizedBox(
                   width: 870,
                   child: Container(
-                    padding: EdgeInsets.fromLTRB(0, 726, 0, 34),
+                    padding: const EdgeInsets.fromLTRB(0, 726, 0, 34),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          margin: EdgeInsets.fromLTRB(0, 0, 0, 26),
+                          margin: const EdgeInsets.fromLTRB(0, 0, 0, 26),
                           child: SizedBox(
                             width: 343.6,
                             child: Row(
@@ -50,7 +52,7 @@ class Opciones extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.fromLTRB(0, 28, 19, 31),
+                                  margin: const EdgeInsets.fromLTRB(0, 28, 19, 31),
                                   child: SizedBox(
                                     width: 28,
                                     child: Text(
@@ -59,21 +61,21 @@ class Opciones extends StatelessWidget {
                                         'Roboto Condensed',
                                         fontWeight: FontWeight.w900,
                                         fontSize: 32,
-                                        color: Color(0xFFE5E5E5),
+                                        color: const Color(0xFFE5E5E5),
                                       ),
                                     ),
                                   ),
                                 ),
                                 Container(
-                                  margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                  margin: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        margin: EdgeInsets.fromLTRB(0, 0, 95.7, 0),
+                                        margin: const EdgeInsets.fromLTRB(0, 0, 95.7, 0),
                                         child: Container(
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             image: DecorationImage(
                                               fit: BoxFit.cover,
                                               image: AssetImage(
@@ -81,21 +83,21 @@ class Opciones extends StatelessWidget {
                                               ),
                                             ),
                                           ),
-                                          child: Container(
+                                          child: SizedBox(
                                             width: 107,
                                             height: 97,
                                           ),
                                         ),
                                       ),
                                       Container(
-                                        margin: EdgeInsets.fromLTRB(0, 32, 0, 27),
+                                        margin: const EdgeInsets.fromLTRB(0, 32, 0, 27),
                                         child: Text(
                                           '',
                                           style: GoogleFonts.getFont(
                                             'Roboto Condensed',
                                             fontWeight: FontWeight.w900,
                                             fontSize: 32,
-                                            color: Color(0xFFE5E5E5),
+                                            color: const Color(0xFFE5E5E5),
                                           ),
                                         ),
                                       ),
@@ -107,14 +109,14 @@ class Opciones extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.fromLTRB(8, 0, 0, 0),
+                          margin: const EdgeInsets.fromLTRB(8, 0, 0, 0),
                           child: Text(
                             'Configuraciones',
                             style: GoogleFonts.getFont(
                               'Nunito',
                               fontWeight: FontWeight.w700,
                               fontSize: 24,
-                              color: Color(0xFF1E1E1E),
+                              color: const Color(0xFF1E1E1E),
                             ),
                           ),
                         ),
@@ -126,45 +128,45 @@ class Opciones extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.fromLTRB(25, 0, 26, 13),
+            margin: const EdgeInsets.fromLTRB(25, 0, 26, 13),
             child: Container(
               decoration: BoxDecoration(
-                color: Color(0xFFFFFFFF),
+                color: const Color(0xFFFFFFFF),
                 borderRadius: BorderRadius.circular(40),
               ),
               child: Container(
-                padding: EdgeInsets.fromLTRB(17, 15, 19, 13.1),
+                padding: const EdgeInsets.fromLTRB(17, 15, 19, 13.1),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 0, 12, 31),
+                      margin: const EdgeInsets.fromLTRB(0, 0, 12, 31),
                       child: Text(
                         'Opciones',
                         style: GoogleFonts.getFont(
                           'Nunito',
                           fontWeight: FontWeight.w700,
                           fontSize: 24,
-                          color: Color(0xFF1E1E1E),
+                          color: const Color(0xFF1E1E1E),
                         ),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 0, 3, 18.1),
+                      margin: const EdgeInsets.fromLTRB(0, 0, 3, 18.1),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Color(0xFFFF4B3A),
+                          color: const Color(0xFFFF4B3A),
                           borderRadius: BorderRadius.circular(40),
                         ),
                         child: Container(
-                          padding: EdgeInsets.fromLTRB(0, 20, 0, 16.9),
+                          padding: const EdgeInsets.fromLTRB(0, 20, 0, 16.9),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                margin: EdgeInsets.fromLTRB(0, 0, 14, 0),
+                                margin: const EdgeInsets.fromLTRB(0, 0, 14, 0),
                                 child: SizedBox(
                                   width: 21,
                                   child: Text(
@@ -173,20 +175,20 @@ class Opciones extends StatelessWidget {
                                       'Roboto Condensed',
                                       fontWeight: FontWeight.w900,
                                       fontSize: 24,
-                                      color: Color(0xFFFFFFFF),
+                                      color: const Color(0xFFFFFFFF),
                                     ),
                                   ),
                                 ),
                               ),
                               Container(
-                                margin: EdgeInsets.fromLTRB(0, 0, 0, 3),
+                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 3),
                                 child: Text(
                                   'Perfil',
                                   style: GoogleFonts.getFont(
                                     'Nunito',
                                     fontWeight: FontWeight.w700,
                                     fontSize: 18,
-                                    color: Color(0xFFFFFFFF),
+                                    color: const Color(0xFFFFFFFF),
                                   ),
                                 ),
                               ),
@@ -196,20 +198,20 @@ class Opciones extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 0, 3, 18.1),
+                      margin: const EdgeInsets.fromLTRB(0, 0, 3, 18.1),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Color(0xFFFF4B3A),
+                          color: const Color(0xFFFF4B3A),
                           borderRadius: BorderRadius.circular(40),
                         ),
                         child: Container(
-                          padding: EdgeInsets.fromLTRB(0, 17, 0, 17.9),
+                          padding: const EdgeInsets.fromLTRB(0, 17, 0, 17.9),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                margin: EdgeInsets.fromLTRB(0, 2, 14, 0),
+                                margin: const EdgeInsets.fromLTRB(0, 2, 14, 0),
                                 child: SizedBox(
                                   width: 24,
                                   child: Text(
@@ -218,20 +220,20 @@ class Opciones extends StatelessWidget {
                                       'Roboto Condensed',
                                       fontWeight: FontWeight.w900,
                                       fontSize: 24,
-                                      color: Color(0xFFFFFFFF),
+                                      color: const Color(0xFFFFFFFF),
                                     ),
                                   ),
                                 ),
                               ),
                               Container(
-                                margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
+                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 5),
                                 child: Text(
                                   'Direcciones',
                                   style: GoogleFonts.getFont(
                                     'Nunito',
                                     fontWeight: FontWeight.w700,
                                     fontSize: 18,
-                                    color: Color(0xFFFFFFFF),
+                                    color: const Color(0xFFFFFFFF),
                                   ),
                                 ),
                               ),
@@ -241,20 +243,20 @@ class Opciones extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 0, 3, 135.1),
+                      margin: const EdgeInsets.fromLTRB(0, 0, 3, 135.1),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Color(0xFFFF4B3A),
+                          color: const Color(0xFFFF4B3A),
                           borderRadius: BorderRadius.circular(40),
                         ),
                         child: Container(
-                          padding: EdgeInsets.fromLTRB(25, 17, 0, 16.9),
+                          padding: const EdgeInsets.fromLTRB(25, 17, 0, 16.9),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                margin: EdgeInsets.fromLTRB(0, 3, 14, 0),
+                                margin: const EdgeInsets.fromLTRB(0, 3, 14, 0),
                                 child: SizedBox(
                                   width: 27,
                                   child: Text(
@@ -263,20 +265,20 @@ class Opciones extends StatelessWidget {
                                       'Roboto Condensed',
                                       fontWeight: FontWeight.w900,
                                       fontSize: 24,
-                                      color: Color(0xFFFFFFFF),
+                                      color: const Color(0xFFFFFFFF),
                                     ),
                                   ),
                                 ),
                               ),
                               Container(
-                                margin: EdgeInsets.fromLTRB(0, 0, 0, 6),
+                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 6),
                                 child: Text(
                                   'Métodos de Pago',
                                   style: GoogleFonts.getFont(
                                     'Nunito',
                                     fontWeight: FontWeight.w700,
                                     fontSize: 18,
-                                    color: Color(0xFFFFFFFF),
+                                    color: const Color(0xFFFFFFFF),
                                   ),
                                 ),
                               ),
@@ -286,21 +288,21 @@ class Opciones extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(3, 0, 0, 0),
+                      margin: const EdgeInsets.fromLTRB(3, 0, 0, 0),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Color(0xFFFF4B3A),
+                          color: const Color(0xFFFF4B3A),
                           borderRadius: BorderRadius.circular(40),
                         ),
                         child: Container(
-                          padding: EdgeInsets.fromLTRB(0, 17.3, 2, 22.6),
+                          padding: const EdgeInsets.fromLTRB(0, 17.3, 2, 22.6),
                           child: Text(
                             'Cerrar Sesión',
                             style: GoogleFonts.getFont(
                               'Nunito',
                               fontWeight: FontWeight.w700,
                               fontSize: 18,
-                              color: Color(0xFFFFFFFF),
+                              color: const Color(0xFFFFFFFF),
                             ),
                           ),
                         ),
@@ -312,7 +314,7 @@ class Opciones extends StatelessWidget {
             ),
           ),
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color(0xFFFFFFFF),
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(40),
@@ -329,15 +331,15 @@ class Opciones extends StatelessWidget {
             child: SizedBox(
               width: 391,
               child: Container(
-                padding: EdgeInsets.fromLTRB(0, 27, 0, 25),
+                padding: const EdgeInsets.fromLTRB(0, 27, 0, 25),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 0, 14, 0),
+                      margin: const EdgeInsets.fromLTRB(0, 0, 14, 0),
                       width: 27,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         boxShadow: [
                           BoxShadow(
                             color: Color(0x1A000000),
@@ -352,7 +354,7 @@ class Opciones extends StatelessWidget {
                           'Roboto Condensed',
                           fontWeight: FontWeight.w900,
                           fontSize: 24,
-                          color: Color(0xFFB0B0B0),
+                          color: const Color(0xFFB0B0B0),
                         ),
                       ),
                     ),
@@ -362,7 +364,7 @@ class Opciones extends StatelessWidget {
                         'Roboto Condensed',
                         fontWeight: FontWeight.w900,
                         fontSize: 24,
-                        color: Color(0xFFB0B0B0),
+                        color: const Color(0xFFB0B0B0),
                       ),
                     ),
                     Text(
@@ -371,7 +373,7 @@ class Opciones extends StatelessWidget {
                         'Roboto Condensed',
                         fontWeight: FontWeight.w900,
                         fontSize: 24,
-                        color: Color(0xFFB0B0B0),
+                        color: const Color(0xFFB0B0B0),
                       ),
                     ),
                     Text(
@@ -380,7 +382,7 @@ class Opciones extends StatelessWidget {
                         'Roboto Condensed',
                         fontWeight: FontWeight.w900,
                         fontSize: 24,
-                        color: Color(0xFFFF4B3A),
+                        color: const Color(0xFFFF4B3A),
                       ),
                     ),
                   ],
