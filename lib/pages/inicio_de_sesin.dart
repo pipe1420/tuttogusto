@@ -1,244 +1,176 @@
 import 'package:flutter/material.dart';
-import 'dart:ui';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_app/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class InicioDeSesin extends StatelessWidget {
-  const InicioDeSesin({super.key});
+class InicioDeSesion extends StatelessWidget {
+  const InicioDeSesion({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return 
-    Container(
-      decoration: const BoxDecoration(
-        color: Color(0xFFFFFFFF),
-      ),
-      child: Container(
-        padding: const EdgeInsets.fromLTRB(25, 333, 26, 18),
-        child: Stack(
-          clipBehavior: Clip.none,
-          children: [
-            Positioned(
-              right: -270,
-              top: -836,
-              child: SizedBox(
-                width: 870,
-                height: 916,
-                child: Stack(
-                  children: [
-                    SizedBox(
-                      width: 870,
-                      height: 916,
-                      child: SvgPicture.asset(
-                        'assets/vectors/mask_group_3_x2.svg',
-                      ),
-                    ),
-                    Positioned(
-                      left: 270,
-                      bottom: 88,
-                      child: Container(
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                            fit: BoxFit.cover,
-                            image: AssetImage(
-                              'assets/images/logo.png',
-                            ),
-                          ),
-                        ),
-                        child: SizedBox(
-                          width: 321,
-                          height: 313,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+    return Scaffold(
+      body: Stack(
+        children: [
+          // Background Image
+          Positioned.fill(
+            child: Image.asset(
+              'assets/images/background.png', // Cambia a la ruta correcta
+              fit: BoxFit.cover,
             ),
-            Container(
-              decoration: BoxDecoration(
-                color: const Color(0xFFFFFFFF),
-                borderRadius: BorderRadius.circular(40),
-              ),
-              child: SizedBox(
-                width: double.infinity,
-                height: 493,
-                child: Container(
-                  padding: const EdgeInsets.fromLTRB(17, 20, 22, 0),
-                  child: Stack(
-                    clipBehavior: Clip.none,
+          ),
+
+          // Contenido Principal
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // Logo
+                Container(
+                  margin: const EdgeInsets.only(bottom: 20),
+                  child: Image.asset(
+                    'assets/images/logo.png',
+                    width: 150, // Ajusta el tamaño según sea necesario
+                    height: 150,
+                  ),
+                ),
+
+                // Formulario de Inicio de Sesión
+                Container(
+                  width: 320,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  child: Column(
                     children: [
-                      SizedBox(
-                        width: double.infinity,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(0, 0, 0, 45),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: const Color(0xFFB0B0B0),
-                                  borderRadius: BorderRadius.circular(40),
-                                ),
-                                child: Container(
-                                  padding: const EdgeInsets.fromLTRB(150, 17, 0, 18),
-                                  child: Text(
-                                    'Registro',
-                                    style: GoogleFonts.getFont(
-                                      'Nunito',
-                                      fontWeight: FontWeight.w700,
-                                      fontSize: 18,
-                                      color: const Color(0xFFFFFFFF),
-                                    ),
+                      // Botones de Iniciar Sesión y Registro
+                      Row(
+                        children: [
+                          Expanded(
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: const Color(0xFFFF4B3A),
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 15),
+                                shape: const RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(20),
+                                    topRight: Radius.circular(0),
                                   ),
                                 ),
                               ),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(8.5, 0, 17.5, 28),
                               child: Text(
-                                'Bienvenido a TuttoGusto',
-                                style: GoogleFonts.getFont(
-                                  'Nunito',
+                                'Iniciar Sesión',
+                                style: GoogleFonts.nunito(
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 24,
-                                  color: const Color(0xFF1E1E1E),
+                                  fontSize: 16,
+                                  color: Colors.white,
                                 ),
                               ),
                             ),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(16, 0, 16, 38),
-                              child: Align(
-                                alignment: Alignment.topLeft,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      margin: const EdgeInsets.fromLTRB(6, 0, 6, 5),
-                                      child: Align(
-                                        alignment: Alignment.topLeft,
-                                        child: Text(
-                                          'Email',
-                                          style: GoogleFonts.getFont(
-                                            'Nunito',
-                                            fontWeight: FontWeight.w700,
-                                            fontSize: 18,
-                                            color: const Color(0xFFB0B0B0),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Container(
-                                      decoration: const BoxDecoration(
-                                        color: Color(0xFFB0B0B0),
-                                      ),
-                                      child: SizedBox(
-                                        width: 252,
-                                        height: 0,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(16, 0, 16, 51),
-                              child: Align(
-                                alignment: Alignment.topLeft,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      margin: const EdgeInsets.fromLTRB(6, 0, 6, 6),
-                                      child: Align(
-                                        alignment: Alignment.topLeft,
-                                        child: Text(
-                                          'Contraseña',
-                                          style: GoogleFonts.getFont(
-                                            'Nunito',
-                                            fontWeight: FontWeight.w700,
-                                            fontSize: 18,
-                                            color: const Color(0xFFB0B0B0),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Container(
-                                      decoration: const BoxDecoration(
-                                        color: Color(0xFFB0B0B0),
-                                      ),
-                                      child: SizedBox(
-                                        width: 252,
-                                        height: 0,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(0, 0, 0, 13),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: const Color(0xFFFF4B3A),
-                                  borderRadius: BorderRadius.circular(40),
-                                ),
-                                child: Container(
-                                  padding: const EdgeInsets.fromLTRB(0, 16, 2, 19),
-                                  child: Text(
-                                    'Iniciar Sesión',
-                                    style: GoogleFonts.getFont(
-                                      'Nunito',
-                                      fontWeight: FontWeight.w700,
-                                      fontSize: 18,
-                                      color: const Color(0xFFFFFFFF),
-                                    ),
+                          ),
+                          Expanded(
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.grey[400],
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 15),
+                                shape: const RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(20),
+                                    topLeft: Radius.circular(0),
                                   ),
                                 ),
                               ),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(13, 0, 0, 0),
-                              child: Align(
-                                alignment: Alignment.topCenter,
-                                child: Text(
-                                  'Olvidaste tu contraseña?',
-                                  style: GoogleFonts.getFont(
-                                    'Nunito',
-                                    fontWeight: FontWeight.w700,
-                                    fontSize: 18,
-                                    color: const Color(0xFF1E1E1E),
-                                  ),
+                              child: Text(
+                                'Registro',
+                                style: GoogleFonts.nunito(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 16,
+                                  color: Colors.white,
                                 ),
                               ),
                             ),
-                          ],
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 20),
+
+                      // Campo de Email
+                      Text(
+                        'Email',
+                        style: GoogleFonts.nunito(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 18,
+                          color: const Color(0xFFB0B0B0),
                         ),
                       ),
-                      Positioned(
-                        left: -1,
-                        top: 0,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFFF4B3A),
-                            borderRadius: BorderRadius.circular(40),
+                      const SizedBox(height: 5),
+                      TextField(
+                        decoration: InputDecoration(
+                          border: UnderlineInputBorder(
+                            borderSide: BorderSide(color: Colors.grey),
                           ),
-                          child: Container(
-                            width: 160.6,
-                            height: 60,
-                            padding: const EdgeInsets.fromLTRB(0, 17, 1, 18),
-                            child: Text(
-                              'Iniciar Sesión',
-                              style: GoogleFonts.getFont(
-                                'Nunito',
-                                fontWeight: FontWeight.w700,
-                                fontSize: 18,
-                                color: const Color(0xFFFFFFFF),
-                              ),
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+
+                      // Campo de Contraseña
+                      Text(
+                        'Contraseña',
+                        style: GoogleFonts.nunito(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 18,
+                          color: const Color(0xFFB0B0B0),
+                        ),
+                      ),
+                      const SizedBox(height: 5),
+                      TextField(
+                        decoration: InputDecoration(
+                          border: UnderlineInputBorder(
+                            borderSide: BorderSide(color: Colors.grey),
+                          ),
+                        ),
+                        obscureText: true,
+                      ),
+                      const SizedBox(height: 40),
+
+                      // Botón de Iniciar Sesión
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFFFF4B3A),
+                          padding: const EdgeInsets.symmetric(vertical: 15),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Iniciar Sesión',
+                            style: GoogleFonts.nunito(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 18,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+
+                      // Enlace de Olvidaste tu contraseña
+                      Center(
+                        child: TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'Olvidaste tu contraseña?',
+                            style: GoogleFonts.nunito(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 16,
+                              color: const Color(0xFF1E1E1E),
                             ),
                           ),
                         ),
@@ -246,10 +178,10 @@ class InicioDeSesin extends StatelessWidget {
                     ],
                   ),
                 ),
-              ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/inicio_de_sesin.dart';
 import 'dart:ui';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_app/utils.dart';
@@ -61,26 +62,31 @@ class Inicio extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
-                  margin: const EdgeInsets.fromLTRB(1, 0, 0, 0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFFF4B3A),
+                ElevatedButton(
+                  onPressed: () {
+                    // Add your navigation logic here
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const InicioDeSesion()), // Replace InicioDeSesin with your actual page
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFFFF4B3A),
+                    padding: const EdgeInsets.fromLTRB(0, 16, 2, 19),
+                    shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(40),
                     ),
-                    child: Container(
-                      width: 300,
-                      padding: const EdgeInsets.fromLTRB(0, 16, 2, 19),
-                      child: Center(
-                        child: Text(
-                          'Iniciar Sesión',
-                          style: GoogleFonts.getFont(
-                            'Nunito',
-                            fontWeight: FontWeight.w700,
-                            fontSize: 18,
-                            color: const Color(0xFFFFFFFF),
-                          ),
-                        ),
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Iniciar Sesión',
+                      style: GoogleFonts.getFont(
+                        'Nunito',
+                        fontWeight: FontWeight.w700,
+                        fontSize: 18,
+                        color: const Color(0xFFFFFFFF),
                       ),
                     ),
                   ),

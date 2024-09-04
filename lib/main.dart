@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_app/pages/carrito_compra_realizada.dart';
 import 'package:flutter_app/pages/inicio.dart';
+import 'package:flutter_app/pages/opciones.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Flutter App',
       home: Scaffold(
         //body: CarritoCompraRealizada(),
@@ -20,9 +20,9 @@ class MyApp extends StatelessWidget {
         // body: HistorialDePedidos(),
         // body: Home(),
         body: Inicio(),
-        // body: InicioDeSesin(),
+        //body: InicioDeSesin(),
         // body: MtodosDePago(),
-        // body: Opciones(),
+        //body: Opciones(),
         // body: Perfil(),
         // body: Registrate(),
       ),
